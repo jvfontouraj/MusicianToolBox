@@ -1,0 +1,84 @@
+/* rem and em do NOT depend on html font-size in media queries!
+Instead, 1=rem = 1em = 16px */
+
+/****************/
+/* BELOW 832px*/
+/***************/
+
+@media (max-width: 52em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: none;
+    margin: 0;
+  }
+
+  .section-content {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: auto;
+    background-color: #aebefd;
+  }
+
+  .section-hero,
+  .section-harmonic-fnc,
+  .section-random-notes,
+  .section-chords-sequence {
+    height: auto;
+    grid-template-rows: auto auto;
+    padding-bottom: 8rem;
+  }
+
+  .hero {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    max-width: 85vw;
+    row-gap: 0;
+    column-gap: 0;
+    margin-top: 5rem;
+  }
+
+  .hero-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn--full {
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+
+  .hero-img-box {
+    margin: 10rem 0;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .random-notes-box {
+    grid-row: 2 / 3;
+  }
+}
+
+/****************/
+/* BELOW 360px*/
+/***************/
+
+@media (max-width: 22.5em) {
+}

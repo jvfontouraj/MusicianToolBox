@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <title>Musician Tool Box</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <ion-icon name="musical-notes-outline" class="logo"></ion-icon>
+            <div class="brand-name">
+                <span>Musician</span>
+                <span>Tool</span>
+                <span>Box</span>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Harmonic Function</a></li>
+                <li><a href="#" class="nav-link">Notes Sequence</a></li>
+                <li><a href="#" class="nav-link">Chords Sequence</a></li>
+                <li><a href="#" class="nav-link nav-cta">Support the dev</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="section-hero">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="heading-primary">Tools for you to discover a new way of compose music</h1>
+                    <p class="hero-description">A place where you can learn about music theory and play around with music tools that will help you to make the greatests songs</p>
+                    <a href="#" class="btn btn--full margin-right-sm">Support the dev</a>
+                    <a href="#" class="btn btn--outline">Start to learn &DownArrow;</a>
+                </div>
+                <div class="hero-img-box">
+                    <img class="hero-img" src="/img/hero-img.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- HARMONIC FUNCTION SECTION -->
+        <section class="section-harmonic-fnc">
+            <div class="container">
+                <h2 class="heading-secondary">Harmonic Function</h2>
+            </div>
+
+            <div class="section-content container">
+                <div class="harmonic-fnc-theory theory">
+                    <h3 class="heading-tertiary">What is this?</h3>
+                    <p class="theory-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi dolorem, praesentium maxime ab, voluptatum quisquam magnam, similique dolore tenetur veniam alias explicabo aliquam ipsam aperiam cum quo ut! Maxime!</p> 
+                    <p class="theory-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minima adipisci ipsum nulla, officia debitis alias voluptates expedita temporibus, amet quia cupiditate! Consequuntur provident quaerat et obcaecati eveniet, ullam odio?</p>
+                    <p class="theory-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni corporis soluta porro corrupti cupiditate a molestiae tenetur. Provident sapiente sequi, est delectus quasi modi doloremque maxime cupiditate aut dolorem.</p>
+                       
+                    <img class="theory-img" src="" alt="">
+                </div>
+
+                <div class="program-box harmonic-function-box">
+                    <h3 class="heading-tertiary">Harmonic Function Finder</h3>
+
+                    <div class="grid grid--2-cols">
+                        <form action="#" class="form">
+                            <label for="refnote-hf">Choose Reference Note</label>
+                            <select class="refnote--harmonic-fnc selector" id="refnote-hf">
+                                <option value="C">C</option>
+                                <option value="C#">C#</option>
+                                <option value="D">D</option>
+                                <option value="D#">D#</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="F#">F#</option>
+                                <option value="G">G</option>
+                                <option value="G#">G#</option>
+                                <option value="A">A</option>
+                                <option value="A#">A#</option>
+                                <option value="B">B</option>
+                            </select>
+                        </form>
+                    
+                        <form action="#" class="form">
+                            <label for="scale-hf">Choose Scale</label>
+                            <select class="scale--harmonic-fnc selector" id="scale-hf">
+                                <option value="Major">Major</option>
+                                <option value="Minor">Minor</option>
+                            </select>
+                        </form>
+                        
+                        <button class="find--harmonic-fnc find-btn">Find it!</button>
+                    </div>
+                        
+                    <p class="message--harmonic-fnc message">Select a note and a scale...</p>
+                
+                    <div class="result--harmonic-fnc result">
+                        <p>Full scale: <span class="full-scale"></span></p>
+                        <p>Tonic (I): <span class="tonic"></span></p>
+                        <p>Supertonic (II): <span class="supertonic"></span></p>
+                        <p>Mediant (III): <span class="mediant"></span></p>
+                        <p>Subdominant (IV): <span class="subdominant"></span></p>
+                        <p>Dominat (V): <span class="dominant"></span></p>
+                        <p>Submediant (VI): <span class="submediant"></span></p>
+                        <p>Leading Tone (VII): <span class="leading--tone"></span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- RANDOM NOTES SEQUENCE SECTION -->
+        <section class="section-random-notes">
+            <div class="container">
+                <h2 class="heading-secondary">Notes Sequence/Melody</h2>
+            </div>
+
+            <div class="section-content container">
+                <div class="program-box random-notes-box">
+                    <h3 class="heading-tertiary">Notes Sequence Generator</h3>
+
+                    <div class="grid grid--2-cols">
+                        <form action="#" class="form hidden">
+                            <label for="refnote-rn">Choose Reference Note</label>
+                            <select class="refnote--random-notes selector" id="refnote-rn">
+                                <option value="C">C</option>
+                                <option value="C#">C#</option>
+                                <option value="D">D</option>
+                                <option value="D#">D#</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="F#">F#</option>
+                                <option value="G">G</option>
+                                <option value="G#">G#</option>
+                                <option value="A">A</option>
+                                <option value="A#">A#</option>
+                                <option value="B">B</option>
+                            </select>
+                        </form>
+                    
+                        <form action="#" class="form">
+                            <label for="scale-rn">Choose Scale</label>
+                            <select class="scale--random-notes selector" id="scale-rn">
+                                <option value="Major">Major</option>
+                                <option value="Minor">Minor</option>
+                                <option value="Chromatic Scale">Chromatic Scale</option>
+                            </select>
+                        </form>
+
+                        <form action="#">
+                            <label for="number-rn">Choose Number of Notes</label>
+                            <select class="number--random-notes selector" id="number-rn">
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5</option>
+                                <option value=6>6</option>
+                                <option value=7>7</option>
+                                <option value=8>8</option>
+                                <option value=9>9</option>
+                                <option value=10>10</option>
+                            </select>
+                        </form>
+                        
+                        <button class="find--random-notes find-btn">Find it!</button>
+                    </div>
+                        
+                    <p class="message--random-notes message">Select a note, a scale and the number of notes...</p>
+                    
+                    <div class="result--random-notes result">
+                        <p >Result: <span class="display-random-melody"></span></p>
+                    </div>
+                </div>
+
+                <div class="random-notes-theory theory">
+                    <h3 class="heading-tertiary">What is this?</h3>
+                    <p class="theory-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi dolorem, praesentium maxime ab, voluptatum quisquam magnam, similique dolore tenetur veniam alias explicabo aliquam ipsam aperiam cum quo ut! Maxime!</p> 
+                    <p class="theory-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minima adipisci ipsum nulla, officia debitis alias voluptates expedita temporibus, amet quia cupiditate! Consequuntur provident quaerat et obcaecati eveniet, ullam odio?</p>
+                    <p class="theory-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni corporis soluta porro corrupti cupiditate a molestiae tenetur. Provident sapiente sequi, est delectus quasi modi doloremque maxime cupiditate aut dolorem.</p>
+                       
+                    <img class="theory-img" src="" alt="">
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- CHORDS SEQUENCE SECTION -->
+
+    <section class="section-chords-sequence">
+        <div class="container">
+            <h2 class="heading-secondary">Chords Sequence / Harmony</h2>
+        </div>
+
+        <div class="section-content container">
+            
+            <div class="chords-sequence-theory theory">
+                <h3 class="heading-tertiary">What is this?</h3>
+                <p class="theory-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi dolorem, praesentium maxime ab, voluptatum quisquam magnam, similique dolore tenetur veniam alias explicabo aliquam ipsam aperiam cum quo ut! Maxime!</p> 
+                <p class="theory-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minima adipisci ipsum nulla, officia debitis alias voluptates expedita temporibus, amet quia cupiditate! Consequuntur provident quaerat et obcaecati eveniet, ullam odio?</p>
+                <p class="theory-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni corporis soluta porro corrupti cupiditate a molestiae tenetur. Provident sapiente sequi, est delectus quasi modi doloremque maxime cupiditate aut dolorem.</p>
+                   
+                <img class="theory-img" src="" alt="">
+            </div>
+            
+            <div class="program-box chords-sequence-box">
+                <h3 class="heading-tertiary">Chords Sequence Generator</h3>
+            
+                <div class="grid grid--2-cols">
+                    <form action="#" class="form hidden">
+                        <label for="refnote-cs">Choose Reference Note</label>
+                        <select class="refnote--chords-sequence selector" id="refnote-cs">
+                            <option value="C">C</option>
+                            <option value="C#">C#</option>
+                            <option value="D">D</option>
+                            <option value="D#">D#</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="F#">F#</option>
+                            <option value="G">G</option>
+                            <option value="G#">G#</option>
+                            <option value="A">A</option>
+                            <option value="A#">A#</option>
+                            <option value="B">B</option>
+                        </select>
+                    </form>
+                
+                    <form action="#" class="form">
+                        <label for="scale-cs">Choose Scale</label>
+                        <select class="scale--chords-sequence selector" id="scale-cs">
+                            <option value="Major">Major</option>
+                            <option value="Minor">Minor</option>
+                        </select>
+                    </form>
+            
+                    <form action="#">
+                        <label for="number-cs">Choose Number of Chords</label>
+                        <select class="number--chords-sequence selector" id="number-cs">
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                    </form>
+                    
+                    <button class="find--chords-sequence find-btn">Find it!</button>
+                </div>
+                    
+                <p class="message--chords-sequence message">Select a note, a scale and the number of chords...</p>
+                
+                <div class="result--chords-sequence result">
+                    <p>Harmonic Function: <span class="display-harmonic-fnc"></span></p>
+                    <p>Full scale: <span class="full-scale--chords"></span></p>
+                    <p>Result: <span class="display-random-harmony"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
