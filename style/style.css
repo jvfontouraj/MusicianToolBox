@@ -162,7 +162,7 @@ label {
 
 .theory-text {
   font-size: 1.8rem;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .theory p{
@@ -226,7 +226,7 @@ label {
 
 .even-section{
   background-color: #aebefdb4;
-  height: 100vh;
+  height: auto;
 }
 
 /* ---------- */
