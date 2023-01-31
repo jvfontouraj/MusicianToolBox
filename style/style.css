@@ -305,6 +305,7 @@ label {
   display: flex;
   justify-content: center;
   padding-bottom: 6.4rem;
+  height: 85vh;
 }
 
 .hero {
