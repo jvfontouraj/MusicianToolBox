@@ -225,7 +225,7 @@ label {
 }
 
 .even-section{
-  background-color: #aebefd;
+  background-color: #aebefdb4;
   height: 100vh;
 }
 
@@ -372,55 +372,35 @@ label {
     z-index: 2;
 }
 
-/* ------------------------- */
-/* HARMONIC FUNCTION SECTION */
-/* ------------------------- */
+/* --------------------------------- */
+/* HARMONIC FNC & CHORDS SQC SECTION */
+/* --------------------------------- */
 
-.harmonic-function-box{
-  background-color: #dee5fe;
-
-}
-
-.refnote--harmonic-fnc {
+.refnote--harmonic-fnc, .refnote--chords-sequence {
   margin-right: 1.6rem;
 }
 
-.find--harmonic-fnc {
-  background-color: #5c7cfa;
+.harmonic-function-box, .chords-sequence-box{
+  background-color: #dee5fe;
 }
 
+.find--harmonic-fnc, .find--chords-sequence {
+  background-color: #5c7cfadc;
+}
 
 /* ---------------------- */
 /* NOTES SEQUENCE SECTION */
 /* ---------------------- */
 
 .random-notes-box{
-background-color: #aebefd;
+background-color: #aebefdb2;
 }
 
 .find--random-notes{
   /* color: #dee5fe; */
-  background-color: #5c7cfa;
+  background-color: #5c7cfab4;
 }
 
 .result--random-notes{
   font-size: 2rem;
-}
-
-
-/* ----------------------- */
-/* CHORDS SEQUENCE SECTION */
-/* ----------------------- */
-
-.chords-sequence-box{
-  background-color: #dee5fe;
-
-}
-
-.refnote--chords-sequence {
-  margin-right: 1.6rem;
-}
-
-.find--chords-sequence {
-  background-color: #5c7cfa;
 }
