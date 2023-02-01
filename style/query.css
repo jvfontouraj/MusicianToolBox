@@ -46,6 +46,10 @@ Instead, 1=rem = 1em = 16px */
 /* BELOW 1056px*/
 /***************/
 @media (max-width: 66em) {
+  .heading-primary{
+    text-align: center;
+  }
+
   .nav {
     display: none;
   }
@@ -63,6 +67,7 @@ Instead, 1=rem = 1em = 16px */
     z-index: 2;
     border-radius: 0 0 1rem 1rem;
   }
+
 }
 
 /****************/
@@ -101,14 +106,26 @@ Instead, 1=rem = 1em = 16px */
     margin: 10rem 0;
   }
 
-  .hero-img {
-    width: 100%;
+  .hero-img-box {
+    width: 80%;
+    margin: 5rem 0 0 0;
   }
 }
 
 /****************/
-/* BELOW 360px*/
+/* BELOW 448px*/
 /***************/
 
-@media (max-width: 22.5em) {
+@media (max-width: 28em) {
+  .heading-primary{
+    font-size: 4.4rem;
+  }
+
+  .hero-img-box {
+    width: 100%;
+  }
+
+  .hero-buttons{
+    gap: 1.5rem;
+  }
 }
