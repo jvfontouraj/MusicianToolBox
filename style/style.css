@@ -93,8 +93,9 @@ label {
 
 .btn:link,
 .btn:visited {
-  display: inline-block;
   text-decoration: none;
+  display: block;
+  text-align: center;
 
   font-size: 2rem;
   font-weight: 500;
@@ -124,6 +125,7 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  gap: 10rem;
 }
 
 .flex-conatiner {
@@ -147,7 +149,7 @@ label {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
-  padding: 8rem 0 6.4rem 0;
+  padding-bottom:6.4rem;
 }
 
 .heading-tertiary {
@@ -182,9 +184,11 @@ label {
 }
 
 .program-box {
+  display: inline-block;
   padding: 2.4rem;
   border-radius: 9px;
   height: auto;
+  margin-bottom: auto;
 
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -221,11 +225,14 @@ label {
 
 .odd-section{
   background-color: #dee5fe;
-  height: auto;
 }
 
 .even-section{
   background-color: #aebefdb4;
+}
+
+.section-margin{
+  padding: 8rem 0;
   height: auto;
 }
 
@@ -305,7 +312,7 @@ label {
   display: flex;
   justify-content: center;
   padding-bottom: 6.4rem;
-  height: 85vh;
+  min-height: 85vh;
 }
 
 .hero {
@@ -315,7 +322,14 @@ label {
   column-gap: 6.4rem;
   justify-items: center;
   align-items: center;
-  max-width: 65vw;
+  max-width: 70%;
+}
+
+.hero-text-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-description {
@@ -324,9 +338,21 @@ label {
   padding-bottom: 6.4rem;
 }
 
+.hero-buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  column-gap: 2rem;
+}
+
+.hero-buttons a{
+  margin: auto;
+}
+
 .hero-img {
   border-radius: 0.5rem;
   z-index: 3;
+  width: 100%;
 }
 
 .hero-img-box {
@@ -335,6 +361,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 /* Background colors on the image */
@@ -355,11 +382,8 @@ label {
     /* height: 10%;  */
 
 /* 60% of parent's width */
-
     padding-bottom: 60%;
-
     background-color: #aebefd;
-
     z-index: 1;
 }
  
@@ -368,8 +392,6 @@ label {
     padding-bottom: 50%;
     background-color: #aebefd;
     background-color: #dee5fe;
-
-
     z-index: 2;
 }
 
