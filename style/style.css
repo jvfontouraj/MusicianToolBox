@@ -390,7 +390,6 @@ label {
 .hero-img-box::after{
     width: 60%;
     padding-bottom: 50%;
-    background-color: #aebefd;
     background-color: #dee5fe;
     z-index: 2;
 }
